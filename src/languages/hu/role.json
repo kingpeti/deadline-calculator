@@ -1,0 +1,19 @@
+{
+    "list": "Szerepek listázása sikeres.",
+    "get": "Szerep lekérése sikeres.",
+    "create": "Létrehozás sikeres",
+    "update": "Frissítés sikeres",
+    "updatePermission": "Engedélyek frissítése sikeres",
+    "delete": "Törlés sikeres",
+    "inactive": "Letiltás sikeres",
+    "active": "Aktiválás sikeres",
+    "error": {
+        "notFound": "A szerep nem található",
+        "exist": "A szerep már létezik",
+        "active": "Érvénytelen szerep állapota",
+        "used": "A szerep használatban van",
+        "inactive": "A szerep inaktív",
+        "isActiveInvalid": "Érvénytelen szerep állapota",
+        "typeForbidden": "A szerep típusa nem engedélyezett"
+    }
+}

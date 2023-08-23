@@ -1,0 +1,22 @@
+{
+    "list": "Az API-kulcsok listájának lekérése sikeres",
+    "get": "Az API-kulcs részletes lekérése sikeres",
+    "create": "Az API-kulcs létrehozása sikeres",
+    "reset": "Az API-kulcs visszaállítása sikeres",
+    "update": "Az API-kulcs frissítése sikeres",
+    "inactive": "Az API-kulcs deaktiválása sikeres",
+    "active": "Az API-kulcs aktiválása sikeres",
+    "updateDate": "Az API-kulcs frissítési dátuma sikeres",
+    "delete": "Az API-kulcs törlése sikeres",
+    "error": {
+        "exist": "Az API-kulcs már létezik",
+        "isActiveInvalid": "Az API-kulcs érvénytelen állapotban van",
+        "expired": "Az API-kulcs lejárt",
+        "notFound": "Az API-kulcs nem található",
+        "keyNeeded": "Az API-kulcs hiányzik",
+        "inactive": "Az Auth API inaktív",
+        "notActiveYet": "Az API-kulcs még nem aktív",
+        "invalid": "Érvénytelen API-kulcs",
+        "typeInvalid": "Érvénytelen API-kulcs típus"
+    }
+}

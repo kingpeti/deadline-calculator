@@ -1,0 +1,7 @@
+{
+    "error": {
+        "userAgentInvalid": "A kérés felhasználói ügynökének nem megfelelő",
+        "userAgentOsInvalid": "A kérés felhasználói ügynökének operációs rendszere nem megfelelő",
+        "userAgentBrowserInvalid": "A kérés felhasználói ügynökének böngészője nem megfelelő"
+    }
+}

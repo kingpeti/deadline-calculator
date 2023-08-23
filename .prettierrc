@@ -2,5 +2,7 @@
   "singleQuote": true,
   "trailingComma": "all",
   "arrowParens": "always",
-  "printWidth": 120
+  "printWidth": 120,
+  "endOfLine": "crlf",
+  "editorconfig": true
 }

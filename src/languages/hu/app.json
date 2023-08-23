@@ -1,0 +1,4 @@
+{
+    "hello": "Ez egy teszt végpont szolgáltatás {serviceName}.",
+    "helloTimeout": "Ez egy teszt végpont szolgáltatás {serviceName} időkorláttal."
+}

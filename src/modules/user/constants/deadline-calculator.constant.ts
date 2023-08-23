@@ -1,0 +1,3 @@
+export const DEADLINE_CALCULATOR_ACTIVE_META_KEY = 'DeadlineCalculatorActiveMetaKey';
+export const DEADLINE_CALCULATOR_INACTIVE_PERMANENT_META_KEY = 'DeadlineCalculatorInactivePermanentMetaKey';
+export const DEADLINE_CALCULATOR_BLOCKED_META_KEY = 'DeadlineCalculatorBlockedMetaKey';

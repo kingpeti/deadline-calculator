@@ -1,0 +1,64 @@
+{
+    "success": {
+        "ok": "Rendben",
+        "created": "Létrehozva",
+        "accepted": "Elfogadva",
+        "noContent": "Nincs tartalom"
+    },
+    "redirection": {
+        "movePermanently": "Állandó átirányítás",
+        "found": "Megtalálva",
+        "notModified": "Nem módosult",
+        "temporaryRedirect": "Átmeneti átirányítás",
+        "permanentRedirect": "Állandó átirányítás"
+    },
+    "clientError": {
+        "badRequest": "Érvénytelen kérés",
+        "unauthorized": "Engedély nélküli",
+        "forbidden": "Tiltott",
+        "notFound": "Nem található",
+        "methodNotAllowed": "Nem engedélyezett metódus",
+        "notAcceptable": "Nem elfogadható",
+        "payloadToLarge": "Túl nagy kérés",
+        "uriToLarge": "Túl hosszú URI",
+        "unsupportedMediaType": "Nem támogatott média típus",
+        "unprocessableEntity": "Feldolgozhatatlan entitás",
+        "tooManyRequest": "Túl sok kérés"
+    },
+    "serverError": {
+        "internalServerError": "Belső szerver hiba",
+        "notImplemented": "Nincs implementálva",
+        "badGateway": "Hibás átjáró",
+        "serviceUnavailable": "Szolgáltatás nem elérhető",
+        "gatewayTimeout": "Átjáró időtúllépés"
+    },
+    "200": "Rendben",
+
+    "201": "Létrehozva",
+    "202": "Elfogadva",
+    "204": "Nincs tartalom",
+
+    "301": "Állandó átirányítás",
+    "302": "Megtalálva",
+    "304": "Nem módosult",
+    "307": "Átmeneti átirányítás",
+    "308": "Állandó átirányítás",
+
+    "400": "Érvénytelen kérés",
+    "401": "Engedély nélküli",
+    "403": "Tiltott",
+    "404": "Nem található",
+    "405": "Nem engedélyezett metódus",
+    "406": "Nem elfogadható",
+    "413": "Túl nagy kérés",
+    "414": "Túl hosszú URI",
+    "415": "Nem támogatott média típus",
+    "422": "Feldolgozhatatlan entitás",
+    "429": "Túl sok kérés",
+
+    "500": "Belső szerver hiba",
+    "501": "Nincs implementálva",
+    "502": "Hibás átjáró",
+    "503": "Szolgáltatás nem elérhető",
+    "504": "Átjáró időtúllépés"
+}
