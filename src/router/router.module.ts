@@ -1,6 +1,6 @@
 import { DynamicModule, ForwardReference, Module, Type } from '@nestjs/common';
 import { RouterModule as NestJsRouterModule } from '@nestjs/core';
-import { RoutesPublicModule } from './routes/routes.deadline-calculator.module';
+import { RoutesPublicModule } from './routes/routes.public.module';
 
 @Module({})
 export class RouterModule {

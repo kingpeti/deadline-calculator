@@ -1,0 +1,15 @@
+Dockerfile
+.dockerignore
+.editorconfig
+.eslintignore
+.eslintrc
+.prettierrc
+.vscode
+.github
+coverage
+node_modules
+npm-debug.log
+docker-compose.yml
+dist
+logs
+test

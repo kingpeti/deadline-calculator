@@ -1,5 +1,5 @@
 import { Injectable, NestMiddleware } from '@nestjs/common';
-import morgan from 'morgan';
+import * as morgan from 'morgan';
 import { Request, Response, NextFunction } from 'express';
 import { createStream } from 'rotating-file-stream';
 import { ConfigService } from '@nestjs/config';

@@ -1,11 +1,18 @@
+import {
+  IHelperDateOptionsFormat,
+  IHelperDateOptionsCreate,
+  IHelperDateOptionsBackward,
+  IHelperDateOptionsForward,
+} from './helper.interface';
+
 export interface IHelperDateService {
+  isWorkingDay(day: number): boolean;
   startOfDay(date: Date): Date;
-  getDay(date: Date): number;
-  setMinutes(date: Date, minutes: number): Date;
-  setHours(date: Date, hours: number): Date;
-  addMinutes(date: Date, minutes: number): Date;
-  isSaturday(date: Date): boolean;
-  isSunday(date: Date): boolean;
-  getNextWorkDay(date: Date): Date;
-  isWorkWeekDay(date: Date): boolean;
+  format(date: Date, options?: IHelperDateOptionsFormat): string;
+  create(date?: string | number | Date, options?: IHelperDateOptionsCreate): Date;
+  timestamp(date?: string | number | Date, options?: IHelperDateOptionsCreate): number;
+  checkTimestamp(timestamp: number): boolean;
+  backwardInMilliseconds(milliseconds: number, options?: IHelperDateOptionsBackward): Date;
+  forwardInMilliseconds(milliseconds: number, options?: IHelperDateOptionsForward): Date;
+  endOfDay(date?: Date): Date;
 }

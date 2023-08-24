@@ -25,3 +25,9 @@ Writing clean code, as defined by Robert C. Martin, is encouraged.
 Using GIT is appreciated.
 
 Please integrate the implementation either within a user interface (UI) or behind an API endpoint.
+
+## How to start:
+
+- If you don't already installed the deps install it with `yarn`
+- Copy the `.env.example` and create a `.env` file in the repo root
+- Then start the dev server with `yarn start:dev`

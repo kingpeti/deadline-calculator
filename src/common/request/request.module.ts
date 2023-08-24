@@ -15,6 +15,7 @@ import { MinGreaterThanConstraint } from './validations/request.min-greater-than
 import { IsOnlyDigitsConstraint } from './validations/request.only-digits.validation';
 import { SafeStringConstraint } from './validations/request.safe-string.validation';
 import { SkipConstraint } from './validations/request.skip.validation';
+import { IsValidDateValueConstraint } from './validations/request.is-valid-date-value.validation';
 
 @Module({
   controllers: [],
@@ -55,6 +56,7 @@ import { SkipConstraint } from './validations/request.skip.validation';
     IsOnlyDigitsConstraint,
     MinDateTodayConstraint,
     MaxDateTodayConstraint,
+    IsValidDateValueConstraint,
   ],
   imports: [
     RequestMiddlewareModule,

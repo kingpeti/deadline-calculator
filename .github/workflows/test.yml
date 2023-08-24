@@ -1,0 +1,53 @@
+name: Test
+on:
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    # environment:
+    #   name: 'test-${{ github.event.number }}'
+    #   url: 'https://${{ github.event.repository.name }}.manual-cd-${{ github.event.number }}.dev.kingpeti.com/'
+
+    strategy:
+      matrix:
+        node-version: ['18.x']
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@v3
+
+      - name: Setup node version ${{ matrix.node-version }}
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Install dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Create env file
+        run: |
+          touch .env
+          echo APP_NAME="DC" >> .env
+          echo APP_ENV="development" >> .env
+          echo APP_LANGUAGE="en" >> .env
+
+          echo HTTP_ENABLE="true" >> .env
+          echo HTTP_HOST="localhost" >> .env
+          echo HTTP_PORT="3000" >> .env
+          echo HTTP_VERSIONING_ENABLE="true" >> .env
+          echo HTTP_VERSION="1" >> .env
+
+          echo TZ="UTC" >> .env
+
+          echo DEBUGGER_HTTP_WRITE_INTO_FILE="false" >> .env
+          echo DEBUGGER_HTTP_WRITE_INTO_CONSOLE="false" >> .env
+          echo DEBUGGER_SYSTEM_WRITE_INTO_FILE="false" >> .env
+          echo DEBUGGER_SYSTEM_WRITE_INTO_CONSOLE="false" >> .env
+
+      - name: Unit Test
+        run: yarn test
+        env:
+          CI: true

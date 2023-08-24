@@ -1,6 +1,7 @@
 import { HttpStatus, Injectable, NestMiddleware } from '@nestjs/common';
 import { Request, Response, NextFunction } from 'express';
-import cors, { CorsOptions } from 'cors';
+import * as cors from 'cors';
+import { CorsOptions } from 'cors';
 import { ConfigService } from '@nestjs/config';
 import { ENUM_APP_ENVIRONMENT } from 'src/app/constants/app.enum.constant';
 
