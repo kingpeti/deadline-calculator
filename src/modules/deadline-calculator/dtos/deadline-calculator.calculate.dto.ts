@@ -2,6 +2,7 @@ import { faker } from '@faker-js/faker';
 import { ApiProperty } from '@nestjs/swagger';
 import { IsNotEmpty, IsNumber, IsPositive } from 'class-validator';
 import { IsValidDateValue } from 'src/common/request/validations/request.is-valid-date-value.validation';
+import { IsValidWorkingHour } from 'src/common/request/validations/request.is-valid-working-hour.validation';
 
 export class DeadlineCalculatorCalculateDto {
   @ApiProperty({
@@ -24,5 +25,6 @@ export class DeadlineCalculatorCalculateDto {
   })
   @IsNotEmpty()
   @IsValidDateValue()
+  @IsValidWorkingHour()
   readonly submitDate: string | Date | number;
 }

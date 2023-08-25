@@ -1,7 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import {
   registerDecorator,
-  ValidationArguments,
   ValidationOptions,
   ValidatorConstraint,
   ValidatorConstraintInterface,
@@ -14,14 +13,11 @@ export class IsValidDateValueConstraint implements ValidatorConstraintInterface 
     if (typeof value === 'string') {
       return !isNaN(Date.parse(value));
     } else if (typeof value === 'number') {
-      return !isNaN(value);
+      return !isNaN(Date.parse(new Date(value).toString()));
     } else if (value instanceof Date) {
       return !isNaN(value.getTime());
     }
     return false;
-  }
-  defaultMessage(args: ValidationArguments) {
-    return `${args.property} must be a valid date string, number, or Date object.`;
   }
 }
 

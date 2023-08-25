@@ -28,7 +28,8 @@
   "isPasswordStrongConstraint": "{property} must have strong pattern",
   "isPasswordMedium": "{property} must have medium pattern",
   "isPasswordWeak": "{property} must have weak pattern",
-  "IsValidDateValueConstraint": "{property} must be a valid date",
+  "isValidDateValue": "{property} must be a valid date",
+  "IsValidWorkingHourConstraint": "{property} must be a valid working hour",
   "error": {
     "userAgentInvalid": "Request user agent not acceptable",
     "userAgentOsInvalid": "Request user agent OS not acceptable",

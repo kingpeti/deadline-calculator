@@ -3,6 +3,7 @@ import { ConfigService } from '@nestjs/config';
 import { Logger, VersioningType } from '@nestjs/common';
 import { swaggerInit } from './swagger';
 import { AppModule } from './app/app.module';
+import { useContainer } from 'class-validator';
 
 async function bootstrap() {
   const app: NestApplication = await NestFactory.create(AppModule);
@@ -23,6 +24,7 @@ async function bootstrap() {
 
   // Global
   app.setGlobalPrefix(globalPrefix);
+  useContainer(app.select(AppModule), { fallbackOnErrors: true });
 
   // Versioning
   if (versionEnable) {
@@ -33,7 +35,7 @@ async function bootstrap() {
     });
   }
   // Swagger
-  await swaggerInit(app);
+  process.env.NODE_ENV !== 'production' && (await swaggerInit(app));
 
   // Listen
   await app.listen(port, host);

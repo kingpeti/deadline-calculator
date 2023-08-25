@@ -16,6 +16,7 @@ import { IsOnlyDigitsConstraint } from './validations/request.only-digits.valida
 import { SafeStringConstraint } from './validations/request.safe-string.validation';
 import { SkipConstraint } from './validations/request.skip.validation';
 import { IsValidDateValueConstraint } from './validations/request.is-valid-date-value.validation';
+import { IsValidWorkingHourConstraint } from './validations/request.is-valid-working-hour.validation';
 
 @Module({
   controllers: [],
@@ -57,6 +58,7 @@ import { IsValidDateValueConstraint } from './validations/request.is-valid-date-
     MinDateTodayConstraint,
     MaxDateTodayConstraint,
     IsValidDateValueConstraint,
+    IsValidWorkingHourConstraint,
   ],
   imports: [
     RequestMiddlewareModule,

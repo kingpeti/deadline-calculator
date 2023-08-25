@@ -27,5 +27,6 @@
   "isPasswordStrong": "{property} must have strong pattern",
   "isPasswordMedium": "{property} must have medium pattern",
   "isPasswordWeak": "{property} must have weak pattern",
-  "IsValidDateValueConstraint": "{property} must be a valid date"
+  "IsValidWorkingHourConstraint": "{property} must be a valid working hour",
+  "isValidDateValue": "{property} must be a valid working hour"
 }

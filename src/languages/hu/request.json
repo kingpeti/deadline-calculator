@@ -27,7 +27,8 @@
   "isPasswordStrong": "{property} erős mintázatúnak kell lennie",
   "isPasswordMedium": "{property} közepes mintázatúnak kell lennie",
   "isPasswordWeak": "{property} gyenge mintázatúnak kell lennie",
-  "IsValidDateValueConstraint": "{property} érvénytelen dátumérték",
+  "IsValidWorkingHourConstraint": "{property} érvényes munkaidő értéknek kell lennie",
+  "isValidDateValue": "{property} érvényes dátum értéknek kell lennie",
   "error": {
     "userAgentInvalid": "A kérés felhasználói ügynökének nem megfelelő",
     "userAgentOsInvalid": "A kérés felhasználói ügynökének operációs rendszere nem megfelelő",
