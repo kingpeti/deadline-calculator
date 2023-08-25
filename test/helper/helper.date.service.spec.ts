@@ -1,5 +1,5 @@
 import { Test, TestingModule } from '@nestjs/testing';
-import { ENUM_HELPER_DATE_DIFF, ENUM_HELPER_DATE_FORMAT } from 'src/common/helper/constants/helper.enum.constant';
+import { ENUM_HELPER_DATE_FORMAT } from 'src/common/helper/constants/helper.enum.constant';
 import { HelperDateService } from 'src/common/helper/services/helper.date.service';
 
 describe('HelperDateService', () => {
@@ -192,8 +192,7 @@ describe('HelperDateService', () => {
 
     it('should use current date if date is not provided', () => {
       jest.useFakeTimers();
-      Date.now = jest.fn(() => new Date('2023-08-24T12:00:00.000Z').getTime());
-
+      jest.setSystemTime(new Date('2023-08-24T12:00:00.000Z'));
       const result = service.endOfDay();
 
       expect(result.getTime()).toBe(new Date('2023-08-24T23:59:59.999Z').getTime());
